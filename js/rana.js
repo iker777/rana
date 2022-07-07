@@ -29,13 +29,25 @@ let btnAbj = document.querySelector(".control__btn--abj");
 
 btnArr.addEventListener("click", function(){
    objetoRana.moverArr();
+   if(objetoRana.x == 200 && objetoRana.y == 440){
+      alert("Has ganado");
+   }
 });
 btnIzq.onclick = function(){
    objetoRana.moverIzq();
+   if(objetoRana.x == 200 && objetoRana.y == 440){
+      alert("Has ganado");
+   }
 }
 btnDer.onclick = function(){
    objetoRana.moverDer();
+   if(objetoRana.x == 200 && objetoRana.y == 440){
+      alert("Has ganado");
+   }
 }
 btnAbj.onclick = function(){
    objetoRana.moverAbj();
+   if(objetoRana.x == 200 && objetoRana.y == 440){
+      alert("Has ganado");
+   }
 }
