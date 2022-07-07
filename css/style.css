@@ -1,0 +1,57 @@
+*{
+   margin: 0;
+   padding: 0;
+}
+.main{
+   height: 100vh;
+   width: 100%;
+   position: absolute;
+   background-color: #1f5768;
+}
+.charca{
+   height: 100%;
+}
+.charca__img{
+   height: 99%;
+}
+.rana{
+   position: absolute;
+   top: 0px;
+   left: 0px;
+}
+.rana__img{
+   height: 15vh;
+}
+.control{
+   position: absolute;
+   right: 0px;
+   bottom: 0px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 1em;
+   background-color: #4d94aa79;
+   border-radius: 3em;
+   margin: 0px 20px 20px 0px;
+}
+.control__btn{
+   padding: 1.5em;
+   background-color: rgb(39, 219, 219);
+   border: none;
+   border-radius: 30px;
+   margin: 0.1em;
+   text-transform: uppercase;
+   font-weight: bold;
+   font-family: cursive;
+}
+.control__btn:hover{
+   background-color: rgb(26, 144, 144);
+   color: white;
+}
+.control__btn:active{
+   background-color: #4d94aa;;
+   color: white;
+}
+.control__btn--arr, .control__btn--abj{
+   width: 70%;
+}
