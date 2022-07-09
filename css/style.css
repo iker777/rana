@@ -55,3 +55,8 @@
 .control__btn--arr, .control__btn--abj{
    width: 70%;
 }
+@media (min-width > 600) {
+   *{
+      background-color: red;
+   }
+}

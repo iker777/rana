@@ -1,6 +1,12 @@
 let rana = document.querySelector(".rana");
 const PASOS_RANA = 40;
 
+function ganarJuego(){
+   if(objetoRana.x == 200 && objetoRana.y == 440){
+      alert("Has ganado");
+   }
+}
+
 let objetoRana = {
    x: 0,
    y: 0,
@@ -29,25 +35,57 @@ let btnAbj = document.querySelector(".control__btn--abj");
 
 btnArr.addEventListener("click", function(){
    objetoRana.moverArr();
-   if(objetoRana.x == 200 && objetoRana.y == 440){
-      alert("Has ganado");
-   }
+   ganarJuego();
 });
 btnIzq.onclick = function(){
    objetoRana.moverIzq();
-   if(objetoRana.x == 200 && objetoRana.y == 440){
-      alert("Has ganado");
-   }
+   ganarJuego();
 }
 btnDer.onclick = function(){
    objetoRana.moverDer();
-   if(objetoRana.x == 200 && objetoRana.y == 440){
-      alert("Has ganado");
-   }
+   ganarJuego();
 }
 btnAbj.onclick = function(){
    objetoRana.moverAbj();
-   if(objetoRana.x == 200 && objetoRana.y == 440){
-      alert("Has ganado");
-   }
+   ganarJuego();
 }
+btnArr.addEventListener("click", function(){
+   objetoRana.moverArr();
+   ganarJuego();
+});
+btnIzq.onclick = function(){
+   objetoRana.moverIzq();
+   ganarJuego();
+}
+btnDer.onclick = function(){
+   objetoRana.moverDer();
+   ganarJuego();
+}
+btnAbj.onclick = function(){
+   objetoRana.moverAbj();
+   ganarJuego();
+}
+
+document.addEventListener("keydown", (e) => {
+   switch (e.key){
+      case "ArrowDown":
+         objetoRana.moverAbj();
+         ganarJuego();
+         break;
+      case "ArrowUp":
+         objetoRana.moverArr();
+         ganarJuego();
+         break;
+      case "ArrowLeft":
+         objetoRana.moverIzq();
+         ganarJuego();
+         break;
+      case "ArrowRight":
+         objetoRana.moverDer();
+         ganarJuego();
+         break;
+      default:
+         console.log("fail...");
+         break;
+   }
+})
